@@ -10,6 +10,10 @@ import { SupportCard } from "./components/SupportCard/SupportCard";
 
 library.add(faEnvelope, faUpload, faInfoCircle);
 
+const uploads = 0;
+const linesAdded = 0;
+const linesSaved = 0;
+
 function App() {
   return (
     <div className="flex flex-col items-center p-4">
@@ -17,7 +21,11 @@ function App() {
         <h1 className="text-2xl text-gray-800">Account Overview</h1>
         <SupportCard />
       </div>
-      <Dashboard />
+      <Dashboard
+        uploads={uploads}
+        linesAdded={linesAdded}
+        linesSaved={linesSaved}
+      />
     </div>
   );
 }
