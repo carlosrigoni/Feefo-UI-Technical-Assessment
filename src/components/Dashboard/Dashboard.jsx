@@ -1,9 +1,10 @@
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Tooltip } from "react-tooltip";
 
 export function Dashboard() {
   const uploads = 0;
-  const LinesAdded = 0;
+  const linesAdded = 0;
   const linesSaved = 0;
 
   return (
@@ -23,20 +24,18 @@ export function Dashboard() {
           Additional sales information
         </Tooltip>
       </div>
-      <p className="my-4 text-sm text-[#4b4849] px-3">
+      <p className="my-4 text-sm text-gray-700 px-3">
         You had <strong>{uploads} uploads</strong> and{" "}
-        <strong>{LinesAdded}</strong> lines added.
+        <strong>{linesAdded}</strong> lines added.
       </p>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 border-t-[1px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 border-t">
         <div className="sm:border-r-2 p-4">
-          <p className="text-[#22ab55] font-bold text-2xl">{uploads}%</p>
-          <p className="text-[#9e9c9c] text-sm font-semibold">UPLOAD SUCCESS</p>
+          <p className="text-green-500 font-bold text-2xl">{uploads}%</p>
+          <p className="text-gray-500 text-sm font-semibold">UPLOAD SUCCESS</p>
         </div>
-
-        <div className="p-4 border-t-[1px] sm:border-0">
-          <p className="text-[#22ab55] font-bold text-2xl">{linesSaved}%</p>
-          <p className="text-[#9e9c9c] text-sm font-semibold">LINES SAVED</p>
+        <div className="p-4 border-t sm:border-0">
+          <p className="text-green-500 font-bold text-2xl">{linesSaved}%</p>
+          <p className="text-gray-500 text-sm font-semibold">LINES SAVED</p>
         </div>
       </div>
     </div>
