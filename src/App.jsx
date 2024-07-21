@@ -1,5 +1,13 @@
 import { Dashboard } from "./components/Dashboard/Dashboard";
 import { SupportCard } from "./components/SupportCard/SupportCard";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faEnvelope,
+  faUpload,
+  faInfoCircle,
+} from "@fortawesome/free-solid-svg-icons";
+
+library.add(faEnvelope, faUpload, faInfoCircle);
 
 function App() {
   return (
