@@ -21,8 +21,7 @@ export function Dashboard({ uploads, linesAdded, linesSaved }) {
         </Tooltip>
       </div>
       <p className="my-4 text-sm text-gray-500 px-4">
-        You had <strong>{uploads} uploads</strong> and{" "}
-        <strong>{linesAdded}</strong> lines added.
+        You had <strong>{uploads} uploads</strong> and <strong>{linesAdded}</strong> lines added.
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 border-t">
         <div className="sm:border-r-2 p-4">
